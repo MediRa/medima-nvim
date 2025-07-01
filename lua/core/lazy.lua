@@ -20,6 +20,8 @@ require("lazy").setup({
     { import = "plugins.completion" },
     { import = "plugins.editor" },
     { import = "plugins.ui" },
+    { import = "plugins.ai" },
+    { import = "plugins.git" },
     { import = "plugins.tool" },
     { import = "plugins.tool.browser" },
 }, {

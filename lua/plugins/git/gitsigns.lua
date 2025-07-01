@@ -1,6 +1,7 @@
 return {
     "lewis6991/gitsigns.nvim",
-    Lazy = true,
+    Lazy = false,
+    enable = true,
     config = function()
         require("gitsigns").setup({
             signs = {
@@ -111,9 +112,16 @@ return {
             desc = "Reset Buffer",
         },
         {
+            "<leader>Gk",
+            function()
+                require("gitsigns").nav_hunk("prev")
+            end,
+            desc = "Previous Hunk",
+        },
+        {
             "<leader>Gj",
             function()
-                require("gitsigns").next_hunk({ navigation_message = false })
+                require("gitsigns").nav_hunk("next")
             end,
             desc = "Next Hunk",
         },
@@ -127,7 +135,7 @@ return {
         {
             "<leader>Gu",
             function()
-                require("gitsigns").undo_stage_hunk()
+                require("gitsigns").stage_hunk()
             end,
             desc = "Undo Stage Hunk",
         },
