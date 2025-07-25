@@ -32,6 +32,7 @@ opt.wrap = true
 opt.ignorecase = true
 opt.smartcase = true
 
+opt.cursorcolumn = true
 opt.cursorline = true
 opt.cursorcolumn = true
 
@@ -39,7 +40,7 @@ opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
 -- Clipboard
-vim.cmd("set clipboard=unnamedplus")
+vim.cmd("set clipboard+=unnamedplus")
 
 vim.diagnostic.config({
     signs = {

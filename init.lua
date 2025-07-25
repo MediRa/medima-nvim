@@ -2,7 +2,7 @@
 -- require("lua.config.options")
 -- require("lua.config.keymaps")
 -- require("lua.config.utils")
-
+--
 require("config.options")
 require("config.keymaps")
 require("config.utils")

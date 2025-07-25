@@ -15,13 +15,12 @@ end, { desc = "Save and source neovim" })
 
 keymap("n", "n", ":keepjumps normal! n<cr>")
 keymap("n", "N", ":keepjumps normal! N<cr>")
-
 -- keymap('n', "<leader>ss", ":wall <leader>z :source<CR>", {})
 --- C/P to  System clipboard
 -- keymap("v","y",'"*y',{})
 -- keymap("v","p",'"*p',{})
--- keymap("v","y",'"+y',{})
--- keymap("v","p",'"+p',{})
+-- keymap("v", "y", '"+y', {})
+-- keymap("v", "p", '"+p', {})
 
 -----------------------------
 ---- Move between window ----
@@ -50,6 +49,8 @@ keymap("v", "Mh", "<Esc><C-w>h")
 keymap("v", "Ml", "<Esc><C-w>l")
 keymap("v", "Mj", "<Esc><C-w>j")
 keymap("v", "Mk", "<Esc><C-w>k")
+
+-- keymap("c", ":e.", "<C-n>", { desc = "Open neotree" })
 
 ----------------------------
 --- Get rid of Highlight ---

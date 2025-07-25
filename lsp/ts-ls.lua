@@ -9,7 +9,7 @@ return {
         "typescript",
         "typescriptreact",
         "typescript.tsx",
-        -- "vue"
+        "vue",
     },
     root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" },
     settings = {
@@ -19,7 +19,7 @@ return {
                 useSyntaxServer = false,
             },
             inlayHints = {
-                includeInlayParameterNameHints = 'all',
+                includeInlayParameterNameHints = "all",
                 includeInlayParameterNameHintsWhenArgumentMatchesName = true,
                 includeInlayFunctionParameterTypeHints = true,
                 includeInlayVariableTypeHints = true,

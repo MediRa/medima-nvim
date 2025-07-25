@@ -22,20 +22,20 @@ return {
                         },
                     },
                     keymap = {
-                        preset = 'enter',
+                        preset = "enter",
 
-                        ['<Tab>'] = { 'snippet_forward', 'select_next', 'fallback' },
-                        ['<S-Tab>'] = { 'snippet_backward', 'select_prev', 'fallback' },
-                        ['<C-Space>'] = { 'show', 'show_documentation', 'hide_documentation' },
-                        ['<C-e>'] = { 'hide' },
+                        ["<Tab>"] = { "snippet_forward", "select_next", "fallback" },
+                        ["<S-Tab>"] = { "snippet_backward", "select_prev", "fallback" },
+                        ["<C-Space>"] = { "show", "show_documentation", "hide_documentation" },
+                        ["<C-e>"] = { "hide" },
 
-                        ['<C-n>'] = {"select_next"},
-                        ['<C-p>'] = {"select_prev"},
-                        ['<C-j>'] = {"select_next"},
-                        ['<C-k>'] = {"select_prev"},
+                        ["<C-n>"] = { "select_next" },
+                        ["<C-p>"] = { "select_prev" },
+                        ["<C-j>"] = { "select_next" },
+                        ["<C-k>"] = { "select_prev" },
 
-                        ['<C-d>'] = { 'scroll_documentation_down' },
-                        ['<C-u>'] = { 'scroll_documentation_up' },
+                        ["<C-d>"] = { "scroll_documentation_down" },
+                        ["<C-u>"] = { "scroll_documentation_up" },
                     },
                     cmdline = {
                         enabled = false,
@@ -46,13 +46,13 @@ return {
                     },
                     completion = {
                         menu = {
-                            border = 'solid',
+                            border = "single",
                             scrolloff = 1,
                             scrollbar = true,
                             draw = {
                                 columns = {
                                     { "kind_icon" },
-                                    { "label",      "label_description", gap = 2 },
+                                    { "label", "label_description", gap = 2 },
                                     { "kind" },
                                     { "source_name" },
                                 },
@@ -62,7 +62,7 @@ return {
                             window = {
                                 border = "single",
                                 scrollbar = false,
-                                winhighlight = 'Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,EndOfBuffer:BlinkCmpDoc',
+                                winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,EndOfBuffer:BlinkCmpDoc",
                             },
                             auto_show = true,
                             auto_show_delay_ms = 500,
@@ -73,5 +73,5 @@ return {
                 require("luasnip.loaders.from_vscode").lazy_load()
             end,
         },
-    }
+    },
 }
