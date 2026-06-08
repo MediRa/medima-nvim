@@ -95,6 +95,9 @@ return {
 
                 -- dokcer file
                 "hadolint",
+
+                -- formatter
+                "pint",
             },
         },
         dependencies = {
