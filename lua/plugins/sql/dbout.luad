@@ -1,0 +1,34 @@
+return {
+    "zongben/dbout.nvim",
+    build = "npm install",
+    lazy = "VeryLazy",
+    cmd = { "Dbout" },
+    config = function()
+        require("dbout").setup({
+            keymaps = {
+                queryer = {
+                    query = "<F5>",
+                    format = "<F11>",
+                    open_inspector = "<F12>",
+                },
+                viewer = {
+                    close = "q",
+                },
+                inspector = {
+                    close = "q",
+                    next_tab = "L",
+                    previous_tab = "H",
+                    inspect = "I",
+                    back = "<BS>",
+                },
+            },
+        })
+    end,
+
+    -- Usage of Debaut
+    -- :Dbout OpenConnection - Open a new buffer and connect to selected database connection
+    -- :Dbout NewConnection - Create a new database connection
+    -- :Dbout DeleteConnection - Delete an existing connection
+    -- :Dbout EditConnection - Edit an existing connection
+    -- :Dbout AttachConnection - Attach to selected connection in the current buffer (this is very useful
+}
