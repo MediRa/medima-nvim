@@ -4,13 +4,13 @@ return {
         "nvim-treesitter/nvim-treesitter-textobjects",
     },
     event = { "BufReadPost", "BufNewFile" },
-    -- branch = "master",
+    branch = "main",
     -- main = "nvim-treesitter.config",
     lazy = false,
     build = ":TSUpdate",
 
     config = function()
-        require("nvim-treesitter.configs").setup({
+        require("nvim-treesitter.config").setup({
             -- old config
             -- sync_install = false,
             sync_install = true,
